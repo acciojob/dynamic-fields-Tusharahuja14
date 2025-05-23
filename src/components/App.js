@@ -16,7 +16,8 @@ const App = () => {
 
   function handleSubmit(e){
     e.preventDefault()
-    console.log(fields)
+    const output = fields.map(({ name, age }) => ({ name, age }))
+    console.log(output)
   }
 
   function removeField(index){
